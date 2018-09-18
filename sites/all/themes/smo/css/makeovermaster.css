@@ -1,0 +1,218 @@
+.page-node-add-makeovers-master .form-item label,
+.node-type-makeovers-master .form-item label,
+.page-node-add-makeovers-master .horizontal-tab-button strong,
+.node-type-makeovers-master .horizontal-tab-button strong {
+  font-size:14px;
+ }
+.page-node-add-makeovers-master .vertical-tabs,
+.node-type-makeovers-master .vertical-tabs {
+  display:none;
+}
+.page-node-add-makeovers-master .horizontal-tabs-panes,
+.node-type-makeovers-master .horizontal-tabs-panes {
+  margin:20px;
+}
+.page-node-add-makeovers-master .form-field-type-datetime,
+.node-type-makeovers-master .form-field-type-datetime,
+.page-node-add-makeovers-master .form-field-name-field-mm-accommodation,
+.node-type-makeovers-master .form-field-name-field-mm-accommodation {
+  width:290px;
+}
+
+.page-node-add-makeovers-master .form-item .description,
+.node-type-makeovers-master .form-item .description {
+  padding-left: 0px;
+}
+.page-node-add-makeovers-master aside,
+.node-type-makeovers-master aside {
+	float: left;
+	width: 45%;
+	padding: 20px;
+}
+.node-type-makeovers-master.sidebar-second #content {
+  width:75%;
+}
+.form-field-type-list-boolean label {
+  width:150px;
+}
+.form-field-type-list-boolean label,
+.form-field-type-list-boolean .form-radios,
+.form-field-type-list-boolean .form-type-radio {
+  display:inline-block;
+}
+.form-field-name-field-airport-transfers {
+  padding:10px 0px 5px;
+}
+.form-item-field-airport-transfers-und label {
+  margin-right:20px;
+}
+.page-node-add-makeovers-master .field-multiple-table,
+.node-type-makeovers-master .field-multiple-table {
+  width:100%;
+}
+.field-multiple-table td .field-type-text,
+.field-multiple-table td .field-type-node-reference {
+  display:inline-block;
+  padding: 10px 15px;
+}
+
+.field-multiple-table tr:not(:first-child) label,
+.group-payment .field.field-name-field-payment-details .field-items .field-item:not(:first-child) .field-label {
+  /*display:none;*/
+}
+
+.group-payment .field.field-name-field-payment-details .field-items .field-item:first-child .entity-field-collection-item .field-items .field-item{
+  /*margin-top: 20px;*/
+}
+
+.group-payment .field.field-name-field-payment-details .field-items .field-item .field-collection-view {
+  padding:10px 0;
+  margin:10px 0;
+  /*line-height: 8px;*/
+}
+
+.field-multiple-table .field-multiple-drag {display:none;}
+.group-leftside5 .form-field-type-list-boolean {margin:15px 0;}
+
+.form-field-name-field-surgery-payment .field-name-field-amount {width:100px;}
+
+/*.page-node-add-makeovers-master .form-field-name-field-transfers-iterations .field-type-text,
+.page-node-add-makeovers-master .form-field-name-field-transfers-iterations .ield-type-datetime{
+  display:block;
+}*/
+
+.page-node-add-makeovers-master .form-field-name-field-transfers-iterations label,
+.page-node-add-makeovers-master .form-field-name-field-tour label,
+.node-type-makeovers-master .form-field-name-field-transfers-iterations label,
+.node-type-makeovers-master .form-field-name-field-tour label{
+  display:inline-block !important;
+}
+
+.tour.form-wrapper,
+.group-tour.form-wrapper {
+  width:96%;
+  float:left;
+}
+/*.field-name-field-payment-details .entity-field-collection-item .field,
+.field-name-field-payment-details .entity-field-collection-item .field .field-label {
+  display:inline-block;
+  width:200px;
+}*/
+
+.group-payment .field-multiple-table td .field-type-text,
+.group-payment .field-multiple-table td .field-type-taxonomy-term-reference,
+.group-payment .field-multiple-table td .field-type-datetime,
+.group-payment .field-multiple-table td .field-type-datetime .container-inline-date .form-item input,
+.group-payment .entity-field-collection-item .field .field-label {
+  display:inline-block;
+  width:200px;
+}
+
+.group-payment .field-multiple-table td .container-inline-date>.form-item {vertical-align:middle;}
+
+.page-node-add-makeovers-master .form-type-radios > label,
+.node-type-makeovers-master .form-type-radios > label{
+  display: inline-block;
+  width: 150px;
+}
+.page-node-add-makeovers-master .form-type-radios .form-radios,
+.page-node-add-makeovers-master .form-type-radios .form-radios .form-type-radio,
+.node-type-makeovers-master .form-type-radios .form-radios,
+.node-type-makeovers-master .form-type-radios .form-radios .form-type-radio {
+  display: inline-block;
+}
+
+.group-cstxt .field-name-field-cstxt-start-date {
+  display: inline-block;
+  position: relative;
+  top: -24px;
+}
+
+.page-field-collection .container-inline-date .form-item, 
+.page-field-collection .container-inline-date .form-item input, 
+.page-field-collection .container-inline-date .date-padding {
+  width:auto;
+}
+.page-field-collection .form-item .description {
+  padding-left:0px;
+}
+.group-cstxt .field-collection-view .field-label,
+.group-flight .field-collection-view .field-label,
+.group-accommodation .field-label,
+.group-hospital .field-label,
+.group-tour .field-collection-view .field-label {
+  width: auto;
+}
+.group-cstxt table.views-table {width:100%;}
+.node-type-makeovers-master .group-transfers .view-content table.views-table,
+.node-type-makeovers-master .group-tour .view-content table.views-table,
+.node-type-makeovers-master .group-payment .view-content table.views-table {width:100%;}
+.node-type-makeovers-master .group-transfers .view-content table.views-table th {text-align:left;}
+.node-type-makeovers-master .group-payment .view-content table.views-table th {text-align:left;}
+.node-type-makeovers-master .group-tour .view-content table.views-table th {text-align:left;}
+
+.node-type-makeovers-master .horizontal-tabs ul.horizontal-tabs-list li {min-width: 4em;}
+#edit-makeover-schedule,
+#edit-makeover-schedule-mail {
+  margin: 0 10px;
+}
+.horizontal-tabs ul.horizontal-tabs-list li a, 
+.horizontal-tabs ul.horizontal-tabs-list li.selected a {
+  text-align:center;
+  font-size:14px;
+}
+
+.page-node-add-makeovers-master .form-type-radios.form-item-field-consultation-before-surger-und >label, 
+.node-type-makeovers-master .form-type-radios.form-item-field-consultation-before-surger-und >label {
+  width: 200px;
+  padding: 5px 0;
+}
+
+/*.node-type-makeovers-master .field-name-field-tour-date-time .container-inline-date .date-padding .form-type-textfield,
+.page-node-add-makeovers-master .field-name-field-tour-date-time .container-inline-date .date-padding .form-type-textfield {
+  width:320px!important;
+  padding: 5px 0;
+}*/
+
+.node-type-makeovers-master .field-name-field-tour-date-time .container-inline-date .date-padding .form-type-textfield input,
+.page-node-add-makeovers-master .field-name-field-tour-date-time .container-inline-date .date-padding .form-type-textfield input{
+  display: inline-block;
+  width: 100px;
+}
+
+.page-node-add-makeovers-master .container-inline-date .date-padding .form-type-textfield,
+.node-type-makeovers-master .container-inline-date .date-padding .form-type-textfield{
+  width:100px !important;
+  margin-right:10px;
+  /*clear:both; */
+}
+
+#edit-makeover-schedule,
+#edit-makeover-schedule-mail,
+#edit-makeover-schedule-mailtodriver,
+#edit-makeover-schedule-mailtohotel,
+#edit-makeover-schedule-mailtotour {
+  background: url(../images/bt_orangeOver.png);
+  background-repeat: no-repeat;
+  border: 0;
+  width: 170px;
+  height: 45px;
+  cursor: pointer;
+  color: #fff;
+  font-size:14px;
+}
+
+.node-type-makeovers-master .field-multiple-table td .field-type-text.field-name-field-no-passengers {padding:0px;}
+.page-node-add-makeovers-master .field-multiple-table td .field-type-text.field-name-field-no-passengers {padding:0px;}
+#field-transfers-iterations-values .field-name-field-transfers-details label {width: 180px;padding: 10px 0;}
+
+.page-node-add-makeovers-master table tr.even, 
+.node-type-makeovers-master table tr.even,
+.node-type-makeovers-master table tr.odd,
+.page-node-add-makeovers-master table tr.odd {background:none !important;}
+
+.node-type-makeovers-master .form-field-name-field-tour label,.page-node-add-makeovers-master #tour label {width:200px;}
+.form-field-name-field-tour .field-multiple-table td .field-type-text {display:initial;padding:0px;}
+
+.form-field-name-field-tour .field-name-field-tour-duration-estimated {display:none!important;}
+.form-field-name-field-tour .field-name-field-arrive-back-at-hotel {display:none !important;}

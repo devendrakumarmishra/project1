@@ -1,0 +1,6 @@
+;$Id$
+name = Makeover Schedule
+description = "Custom scripts to manage makeover schedule"
+core = 7.x
+version = "7.51"
+package = "STU"

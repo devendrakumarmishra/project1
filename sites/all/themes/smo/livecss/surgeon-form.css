@@ -1,0 +1,291 @@
+.node-surgeon-form,
+.node-quote-form {
+  font-size: 14px;
+}
+.node-surgeon-form table,
+.node-quote-form table {
+  width: 95%;
+}
+.node-surgeon-form h3,
+.node-quote-form h3 {
+  padding: 6px;
+  background: #f60;
+  padding: 10px;  
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin:10px 0;
+  float:left;
+  width:100%;
+  box-sizing:border-box;
+}
+.node-surgeon-form fieldset,.node-quote-form  fieldset {
+	margin-bottom:1em;
+	box-sizing:border-box;
+}
+.node-surgeon-form label, .node-quote-form  label{
+  float: left;
+  margin-right: 2%;
+  width: 30%;
+  /*text-align: right;*/
+}
+.node-surgeon-form .form-radios label,
+.node-quote-form .form-radios label {
+  float: none;
+}
+.node-surgeon-form td.wide label,
+.node-quote-form td.wide label{
+  width: 400px;
+}
+.node-surgeon-form td,
+.node-quote-form td {
+  width: 50%;
+}
+.node-surgeon-form td.wide,
+.node-quote-form td.wide {
+  width: 100%;
+}
+.node-surgeon-form .form-radios {
+  margin-left: 150px;
+}
+.node-surgeon-form td.wide .form-radios,
+.node-quote-form td.wide .form-radios {
+  margin-left: 410px;
+}
+.node-surgeon-form .resizable-textarea,
+.node-quote-form .resizable-textarea {
+  width: 100%;
+}
+.node-surgeon-form .grippie,
+.node-quote-form .grippie {
+  margin-left: 210px;
+}
+.node-surgeon-form td.wide .resizable-textarea,
+.node-quote-form td.wide .resizable-textarea {
+  width: 400px;
+}
+.node-surgeon-form  td.wide .grippie,
+.node-quote-form  td.wide .grippie {
+  margin-left: 410px;
+}
+.node-surgeon-form td.wide div.description {
+ 
+}
+.node-surgeon-form .form-text,
+.node-quote-form .form-text, 
+.node-quote-form  .form-select ,
+.node-surgeon-form .form-select{
+   width: 68%; 
+   height:30px;
+   box-sizing:border-box;
+   padding:5px;
+}
+.node-quote-form .form-item.form-type-checkbox-tree label,
+.node-quote-form .form-item.form-item-field-quote-term-condition-und label,
+.node-quote-form .form-item.form-item-field-hear-about-us-und label,
+.node-quote-form .form-item.form-type-textarea label{
+	width:100%;
+	float:none;
+	margin-right:0;
+} 
+.form-field-name-field-surgical-procedures .form-type-checkbox-tree > label,
+.form-field-name-field-dental-procedures .form-type-checkbox-tree > label {
+  text-transform: uppercase;
+  color: #f60;
+}
+.node-quote-form .form-field-type-taxonomy-term-reference.form-field-name-field-hairtransplant-procedures {
+  margin-top: -10px;
+}
+.form-field-name-field-expect-from-surgery .form-item .description{
+  padding-left:0px;
+  display:none
+}
+.form-field-name-field-expect-from-surgery .form-item label span {
+  font-size:0.85em;
+  font-weight:normal;
+}
+fieldset.date-combo .container-inline-date .date-padding {
+	box-sizing:border-box;
+	padding:0 10px;
+}
+.node-quote-form .form-item, .node-surgeon-form .form-item {
+	margin:5px 0;
+	position:relative;
+}
+.node-quote-form .form-item.form-type-radio,
+.node-surgeon-form .form-item.form-type-radio {
+	float:left;
+	margin-right:30px;
+}
+.node-quote-form .form-item.form-type-radio:last-child,
+.node-surgeon-form .form-item.form-type-radio:last-child {
+	margin-right:0;
+}
+.date-no-float {
+	width:100%;
+}
+.container-inline-date .form-item, 
+.container-inline-date .form-item input,
+.container-inline-date .date-padding {
+	width:100%;
+}
+#field-sg-dob-add-more-wrapper .container-inline-date .form-item input {
+  width:68%; 
+}
+.node-surgeon-form .pull-full label,
+.node-quote-form .pull-full label {
+    width: 13.7%;
+}
+.node-surgeon-form .pull-full .form-text,
+.node-quote-form .pull-full .form-text {
+	width:84.3%;
+}
+.node-surgeon-form #edit-field-sg-wm-children-0-value,
+.node-surgeon-form #edit-field-sg-wm-age-youngest-0-value,
+.node-surgeon-form #edit-field-sg-height-0-value,
+.node-surgeon-form #edit-field-sg-weight-0-value,
+.node-surgeon-form #edit-field-sg-age-0-value {
+  width: 40px;
+}
+.node-surgeon-form #edit-field-sg-weight-0-value-wrapper div.description,
+.node-surgeon-form #edit-field-sg-height-0-value-wrapper div.description {
+  margin-left: 210px;
+}
+input#edit-title {
+  width: 250px;
+}
+#edit-field-sg-specify-0-value-wrapper label {
+
+}
+#edit-field-sg-age-0-value {
+  width: 200px;
+}
+td.field_sg_wm_milk .description {
+  text-align: right;
+}
+/* ================ Form Style ================*/
+.node-surgeon-form .center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.node-surgeon-form .pull-right,
+.node-quote-form .pull-right {
+  float: right !important;
+  margin-left:2%;
+}
+
+.node-surgeon-form .pull-left,
+.node-quote-form .pull-left {
+  float: left !important;
+}
+
+.node-surgeon-form .hide,
+.node-quote-form .hide {
+  display: none !important;
+}
+
+.node-surgeon-form .show,
+.node-quote-form .show {
+  display: block !important;
+}
+
+.node-surgeon-form .row:before,
+.node-surgeon-form .row:after,
+.node-quote-form .row:before,
+.node-quote-form .row:after {
+  display: table;
+  content: " ";
+}
+.node-surgeon-form .row:after,
+.node-quote-form .row:after{
+  clear: both;
+}
+
+.node-surgeon-form .row,
+.node-quote-form .row {
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.node-surgeon-form .row .col,
+.node-quote-form .row .col  {
+  width:49%;
+}
+
+/*.node-surgeon-form .form-type-textarea label {width:100%;}*/
+
+.node-surgeon-form .resizable-textarea {width:100%;}
+
+.node-surgeon-form .group_women .form-type-radios label { width:50%!important;height: auto;}
+.node-surgeon-form .group_women .form-type-radios .form-radios { width:50%!important;}
+
+.node-surgeon-form .group_women_surgery .form-type-radios label{width:50%!important;height: auto;}
+.node-surgeon-form .group_women_surgery .form-type-radios .form-radios {width:50%!important;}
+
+.node-surgeon-form .group_medical_history .form-type-radios label{width:50%!important;height: auto;}
+.node-surgeon-form .group_medical_history .form-type-radios .form-radios {width:50%!important;}
+
+.node-surgeon-form .field_term_condition .form-checkbox {float:left;}
+.node-surgeon-form .field_term_condition label {
+  width: 50%;
+  position: relative;
+  top: -6px;
+  text-align:left;
+}
+.node-surgeon-form .form-item-field-sg-preferred-language-und label {
+  float:none;
+}
+.node-surgeon-form .form-textarea-wrapper textarea {display:inline;}
+.container-inline-date .form-item input,
+.container-inline-date .form-item select, 
+.container-inline-date .form-item option {
+	clear:none;
+	margin-right:0;
+	width:68%;
+ }
+ 
+.page-node-add-surgeon #edit-submit,
+.node-type-surgeon #edit-submit,
+.page-node-add-quote #edit-submit,
+.node-type-quote #edit-submit {
+  background-image:url(../images/bt_surgeon.png);
+  background-repeat:no-repeat;
+	background-position:0 0;
+	font-size:0px;
+	padding: 0 167px;
+	height:51px;
+}
+
+.page-node-add-surgeon #edit-submit:hover,
+.node-type-surgeon #edit-submit:hover,
+.node-type-quote #edit-submit:hover,
+.page-node-add-quote #edit-submit:hover {
+	background-image:url(../images/bt_surgeon.png);
+  background-repeat:no-repeat;
+	background-position:0 -54px;
+	cursor:pointer;
+}
+.page-node-add-surgeon .date-date { float:left;}
+.page-node-add-surgeon .form-textarea{ border: 1px solid #ccc !important;width:68%;}
+.node-surgeon-form .grippie {display:none;}
+#edit-field-sg-images-und-ajax-wrapper { float: left; width: 100%;}
+.container-inline-date .date-date { width:68% !important;}
+a.preferred_surgeon { font-size:12px;}
+.samlltextbox input.form-text { width:200px !important;}
+.datefield #field-sg-dob-add-more-wrapper > .form-item,
+.datefield #field-sg-dob-add-more-wrapper > .form-item > .form-item,
+.datefield #field-sg-dob-add-more-wrapper .form-item.form-type-date-text {margin:0px;}
+
+.form-item.form-type-date-combo,
+.form-item.form-type-date-combo .form-type-date-text,
+.form-item.form-type-date-combo .form-type-date-text .form-type-textfield {margin:0px;}
+
+.node-surgeon-form .form-textarea-wrapper textarea {height:30px;}
+.shortdate .container-inline-date .date-date {width:21% !important;}
+.group_medical_history .form-item.form-type-radios {margin:0px;}
+
+.page-node-add-quote .page__title {display:inline-block; float:left;}
+.page-node-add-quote .block-menu-price {float:right;width: 130px;}

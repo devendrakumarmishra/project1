@@ -1,0 +1,6 @@
+; $Id$
+name = STU Procedure Group
+description = "STU Procedure List for procedure landing page"
+core = 7.x
+package = "STU"
+version = "7.43"

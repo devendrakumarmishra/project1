@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function insightly_integration_for_drupal_uninstall() {
+  variable_del('insightly_integration_for_drupal_apikey');
+  variable_del('insightly_integration_for_drupal_chosen_fields');
+  variable_del('insightly_integration_for_drupal_chosen_forms');
+}

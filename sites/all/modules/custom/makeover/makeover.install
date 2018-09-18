@@ -1,0 +1,76 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function makeover_schema() {
+  $schema = array();
+  
+  $schema['makeover_procedure_costs'] = array(
+    'description' => 'The table containing procedure costs per destination.',
+    'fields' => array(
+      'procedure_nid' => array(
+        'description' => 'The procedure nid.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'destination_nid' => array(
+        'description' => 'The destination nid.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'cost' => array(
+        'description' => 'The cost as an integer.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'indexes' => array(
+      'procedure_nid' => array('procedure_nid'),
+      'destination_nid' => array('destination_nid'),
+    ),
+    'unique keys' => array(
+      'procedure_destination' => array('procedure_nid', 'destination_nid'),
+    ),
+  );
+
+  $schema['makeover_pdf_filepaths'] = array(
+    'description' => 'The table pdf filepaths for surgeon forms.',
+    'fields' => array(
+      'nid' => array(
+        'description' => 'The surgeon nid.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'pdf_filepath' => array(
+        'description' => 'The PDF filepath.',
+        'type' => 'varchar',
+        'length' => 256,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+    ),
+    'indexes' => array(
+      'nid' => array('nid'),
+    ),
+  );
+
+
+  return $schema;
+}
+
+/**
+ * Implements hook_install().
+ */
+function makeover_install() {
+  drupal_install_schema('makeover');
+  drupal_set_message('makeover table installed');
+}

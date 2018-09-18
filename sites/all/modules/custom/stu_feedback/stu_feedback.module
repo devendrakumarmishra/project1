@@ -1,0 +1,116 @@
+<?php
+module_load_include('inc', 'stu_feedback', 'includes/feedback.pages');
+/**
+ * Implementing hook_menu()
+ */
+function stu_feedback_menu() {
+  $items['admin/makeover/settings/feedback'] = array(
+		'title'=>'Feedback Form Settings',
+		'page callback'=>'drupal_get_form',
+		'page arguments' => array('feedback_form_settings'),
+	  'access arguments' => array('makeover admin access'),
+		'type' => MENU_NORMAL_ITEM,
+		'file' => 'includes/feedback.admin.inc',
+	);
+  return $items;
+}
+
+/**
+ *  Implementing hook_form_alter()
+ */
+function stu_feedback_form_alter(&$form, &$form_state, $form_id) {
+  global $user;
+  if ($form_id == 'feedback_node_form') {
+		drupal_set_title('Customer Feedback Form');
+    $form['actions']['submit']['#value'] = t('Submit');
+  }
+}
+
+/**
+ * Implements hook_preprocess_status_messages()
+ */
+function stu_feedback_preprocess_status_messages(&$variables) {
+  $node = menu_get_object();
+  if (isset($_SESSION['messages']['status'])) {
+    foreach ($_SESSION['messages']['status'] as $key => $msg) {
+      if (strpos($msg, 'has been created') !== FALSE) {
+        if ($node->type == 'feedback') {
+          unset($_SESSION['messages']['status'][$key]);
+        }
+      }
+    }
+  }
+}
+
+/**
+ *  Implementing hook_node_insert()
+ */
+function stu_feedback_node_insert($node) {
+	if ($node->type == 'feedback') {
+    _sendmail_feedback_notification_staff($node);
+  }
+}
+
+/**
+ *  Implementing hook_node_update()
+ */
+function stu_feedback_node_update($node) {
+  if ($node->type == 'feedback') {
+    _sendmail_feedback_notification_staff($node);
+  }
+}
+
+/**
+ * Implementing hook_node_view()
+ */
+function stu_feedback_node_view($node, $view_mode, $langcode) {
+  global $user;
+  $arg = arg();
+  if ($node->type == 'feedback' && $arg[0] == 'node' && is_numeric($arg[1]) && count($arg) == 2 && empty($user->uid)) {
+    drupal_add_css(drupal_get_path('module','stu_feedback') . '/css/stu_feedback.css' );
+    unset($node->content);
+    $node->content['feedback_message']['#markup'] = nl2br(variable_get('feedback_welcome',''));
+  }
+}
+
+/**
+ * Implements hook_field_attach_view_alter().
+ */
+function stu_feedback_field_attach_view_alter(&$output, $context) {
+  // We proceed only on nodes.
+  if ($context['entity']->type != 'feedback') {
+    return;
+  }
+ 
+  $node = $context['entity'];
+  // Load all instances of the fields for the node.
+  $instances = _field_invoke_get_instances('node', $node->type, array('default' => TRUE, 'deleted' => FALSE));
+ 
+  foreach ($instances as $field_name => $instance) {
+    // Set content for fields they are empty.
+    if (empty($node->{$field_name})) {
+      $display = field_get_display($instance, 'full', $node);
+      // Do not add field that is hidden in current display.
+      if ($display['type'] == 'hidden' || $field_name == 'field_feedback_top') {
+        continue;
+      }
+      
+      // Load field settings.
+      $field = field_info_field($field_name);
+      // Set output for field.
+      $output[$field_name] = array(
+        '#theme' => 'field',
+        '#title' => $instance['label'],
+        '#label_display' => 'above',
+        '#field_type' => $field['type'],
+        '#field_name' => $field_name,
+        '#bundle' => $node->type,
+        '#object' => $node,
+        '#items' => array(),
+        '#entity_type' => 'node',
+        '#weight' => $display['weight'],
+        0 => array('#markup' => '&nbsp;'),
+      );
+    }
+  }
+}

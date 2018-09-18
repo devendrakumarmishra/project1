@@ -1,0 +1,6 @@
+name = AWeber Integration
+description = Integrate and manage your site users as AWeber leads.
+core = 7.x
+version = "7.43"
+package = "STU"
+

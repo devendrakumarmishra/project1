@@ -1,0 +1,438 @@
+  <?php
+  global $user;
+  ?>
+  <div><span style="font-size:14px;margin-top:5px;font-weight:bold;color:red;text-align:center;"><i>Please only complete this form if you have photos to upload for review by the surgeon.</i></span><span style="font-size:14px;margin-top:5px;font-weight:bold;text-align:center;"><i> For a quote, please click on Get a FREE Quote Now! at the top of this page.</i></span></div>
+    
+    <?php print render($form['group_general']['#prefix']);?>
+		<div style="font-size:13px;margin-bottom:5px;margin-top:5px;font-weight:bold;color:red;text-align:center;"><i>Please provide First Name and Last Name AS APPEARS IN YOUR PASSPORT.</i></div>
+		<div class="row">
+		  <div class="pull-left col"> <?php print drupal_render($form['group_general']['field_sg_title']); ?> </div>
+		  <div class="pull-right col"> <?php print drupal_render($form['group_general']['field_sg_age']); ?> </div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"> <?php print drupal_render_children($form['group_general']['field_sg_first_name'])?> </div>
+		  <div class="pull-right col"> <?php print drupal_render_children($form['group_general']['field_sg_nationality'])?> </div>
+		</div>
+		
+	  <div class="row">
+		  <div class="pull-left col"> <?php print drupal_render_children($form['group_general']['field_sg_last_name'])?> </div>
+		  <div class="pull-right col datefield"><?php print drupal_render_children($form['group_general']['field_sg_dob']); ?> </div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_general']['field_sg_gender']); ?> </div>
+		  <div class="pull-right col"><?php //print drupal_render_children($form['group_general']['field_sg_dob']); ?> </div>
+		</div>
+		
+	 <div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_general']['field_sg_height']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_general']['field_sg_weight']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_general']['field_sg_email']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_general']['field_sg_phone']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_general']['field_sg_mobile_number']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_general']['field_sg_daytime_number']); ?></div>
+		</div>
+		
+		<div class="row">
+			<div class="pull-full"><?php print drupal_render_children($form['group_general']['field_sg_postal_street_address']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_general']['field_sg_suburb']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_general']['field_sg_city']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_general']['field_sg_region_state']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_general']['field_sg_postcode_zip']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_general']['field_sg_countries']); ?></div>
+		  <div class="pull-right col"><?php //print drupal_render_children($form['group_general']['field_sg_passport_number']); ?></div>
+		</div>
+		
+		<div class="row">
+		   <div class=""><?php print drupal_render_children($form['group_general']['field_sg_preferred_language']); ?></div>
+		</div>
+		
+		<?php print render($form['group_general']['#suffix']);?>
+		
+		<div class="group_surgery_details">
+		<?php print render($form['group_surgery_details']['#prefix']);?>
+		 
+		 <div class="row">
+		   <div class="pull-left col"><?php print drupal_render_children($form['group_surgery_details']['field_sg_plan_date']); ?></div>
+		   <div class="pull-right col"><?php print drupal_render_children($form['group_surgery_details']['field_sg_home_date']); ?></div>
+		 </div>
+		 
+		 <div class="row">
+		   <div><?php print drupal_render_children($form['group_surgery_details']['field_sg_procedures']); ?></div>
+		 </div>
+		 
+		 <div class="row">
+			 <div ><?php print drupal_render_children($form['group_surgery_details']['field_sg_preferred_surgeon']); ?></div>
+		 </div>
+		 
+		 <div class="row">
+		   <div><?php print drupal_render_children($form['group_surgery_details']['field_sg_expectation']); ?></div>
+		 </div>
+		 
+		 <div class="row">
+		   <div><?php print drupal_render_children($form['group_surgery_details']['field_sg_questions']); ?></div>
+		 </div>
+		 
+		 
+		 <?php print render($form['group_surgery_details']['#suffix']);?>
+	  </div>
+	  
+	  
+	  <div class="group_family_medical_conditions">
+		  <?php print render($form['group_family_medical_conditions']['#prefix']);?>
+		  
+		    <div class="row">
+					<div class="pull-left col"><?php print drupal_render_children($form['group_family_medical_conditions']['field_sg_heart_disease']); ?></div>
+					<div class="pull-right col"><?php print drupal_render_children($form['group_family_medical_conditions']['field_sg_heart_disease_info']); ?></div>
+				</div>
+				
+				<div class="row">
+					<div class="pull-left col"><?php print drupal_render_children($form['group_family_medical_conditions']['field_sg_diabetes_new']); ?></div>
+					<div class="pull-right col"><?php print drupal_render_children($form['group_family_medical_conditions']['field_sg_diabetes_new_info']); ?></div>
+				</div>
+				
+				<div class="row">
+					<div class="pull-left col"><?php print drupal_render_children($form['group_family_medical_conditions']['field_sg_hypertension']); ?></div>
+					<div class="pull-right col"><?php print drupal_render_children($form['group_family_medical_conditions']['field_sg_hypertension_info']); ?></div>
+				</div>
+				
+				<div class="row">
+					<div class="pull-left col"><?php print drupal_render_children($form['group_family_medical_conditions']['field_sg_asthma']); ?></div>
+					<div class="pull-right col"><?php print drupal_render_children($form['group_family_medical_conditions']['field_sg_asthma_info']); ?></div>
+				</div>
+				
+				<div class="row">
+					<div class="pull-left col"><?php print drupal_render_children($form['group_family_medical_conditions']['field_sg_cancer_new']); ?></div>
+					<div class="pull-right col"><?php print drupal_render_children($form['group_family_medical_conditions']['field_sg_cancer_new_info']); ?></div>
+				</div>
+		
+		  <?php print render($form['group_family_medical_conditions']['#suffix']);?>
+	</div>
+		
+		
+	  
+	  <div class="group_medical_conditions">
+		<?php print render($form['group_medical_conditions']['#prefix']);?>
+	    
+	  <div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_diabetes']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_diabetes_info']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_thyroid']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_thyroid_info']); ?></div>
+		</div>
+	   
+	  <div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_heart']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_heart_info']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_lung']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_lung_info']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_blood_pressure']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_blood_pressure_info']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_liver']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_liver_info']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_blood_disorder']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_blood_disorder_info']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_cancer']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_cancer_info']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_hiv']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_hiv_info']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_depression']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_depression_info']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_neurologic']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_neurologic_info']); ?></div>
+		</div>
+		
+		<div class="row">
+		  <div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_anaesthesia']); ?></div>
+		  <div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_anaesthesia_info']); ?></div>
+		</div>
+		
+	   <div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_cardiovascular_accidents']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_cardiovascular_acc_info']); ?></div>
+			</div>
+			
+			<div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_bleeding_tendency']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_bleeding_tendency_info']); ?></div>
+			</div>
+			
+			<div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_hyperthyroidism']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_hyperthyroidism_info']); ?></div>
+			</div>
+			
+			<div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_adrenal_insufficiency']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_adrenal_insufficiency_info']); ?></div>
+			</div>
+			
+			<div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_hepatitus']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_hepatitus_info']); ?></div>
+			</div>
+			
+			<div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_hiv']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_hiv_info']); ?></div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_keloid_scarring']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_keloid_scarring_info']); ?></div>
+			</div>
+			
+			<div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_breast_cancer']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_breast_cancer_info']); ?></div>
+			</div>
+			
+			<div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_major_operation']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_major_operation_info']); ?></div>
+			</div>
+			
+			<div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_underlying_disease']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_underlying_disease_info']); ?></div>
+			</div>
+			
+			<div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_medical_conditions']['field_have_you_ever_been_treated']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_medical_conditions']['field_treated_info']); ?></div>
+			</div>
+			
+			<div class="row">
+		    <div class="pull-full-special"><?php print drupal_render_children($form['group_medical_conditions']['field_sg_other']); ?></div>
+		  </div>
+		
+		 <div class="row">
+		   <?php print drupal_render_children($form['group_medical_conditions']['field_sg_other_specify']); ?>
+		 </div>
+		
+		
+		<?php foreach ($form['group_medical_conditions'] as $key => $field):?>
+		  <?php if (substr($key, 0, 5) != 'field') continue?>
+		  <?php if ($output = render($field)):?>
+		    <div class="row <?php print $key?>"><?php print $output?></div>
+		  <?php endif?>
+		<?php endforeach;?>
+	   
+	  <?php print render($form['group_medical_conditions']['#suffix']);?>
+	  </div>
+	  
+	  
+	  <div class="group_women">
+		   <?php print render($form['group_women']); ?>
+		</div>
+	  
+	  
+		<div class="group_women_surgery">
+			
+			<?php print render($form['group_women_surgery']['#prefix']);?>
+			
+			<div class="row">
+		    <?php print drupal_render_children($form['group_women_surgery']['field_sg_wm_surgery']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_women_surgery']['field_sg_wm_pregnant']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_women_surgery']['field_sg_wm_pregnancies']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_women_surgery']['field_sg_wm_breastfed']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_women_surgery']['field_sg_wm_milk']); ?>
+		  </div>
+		  
+		  <div class="row">
+		     <div class="pull-left col"><?php print drupal_render_children($form['group_women_surgery']['field_sg_wm_lastfeed']); ?></div>
+		     <div class="pull-right col"><?php print drupal_render_children($form['group_women_surgery']['field_sg_wm_last_baby']); ?></div>
+		  </div>
+		  
+		  <div class="row">
+		   <div class="pull-left col"> <?php print drupal_render_children($form['group_women_surgery']['field_sg_wm_children']); ?></div>
+		   <div class="pull-right col"><?php print drupal_render_children($form['group_women_surgery']['field_sg_wm_age_youngest']); ?></div>
+		  </div>
+		  
+		  
+		  
+		  
+	<?php print render($form['group_women_surgery']['#suffix']);?>
+		</div>
+		
+		<div class="group_breast_surgery_details">
+		  <?php print render($form['group_breast_surgery_details']['#prefix']);?>
+		  
+		  <div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_breast_surgery_details']['field_sg_current_bra_size']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_breast_surgery_details']['field_sg_requested_size']); ?></div>
+			</div>
+			
+		  <div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_breast_surgery_details']['field_sg_desired_implant']); ?></div>
+				<div class="pull-right col"><?php print drupal_render_children($form['group_breast_surgery_details']['field_sg_desired_placement']); ?></div>
+			</div>
+			
+			<div class="row">
+				<div class="pull-left col"><?php print drupal_render_children($form['group_breast_surgery_details']['field_sg_desired_incision']); ?></div>
+				<div class="pull-right col"><?php //print drupal_render_children($form['group_breast_surgery_details']['field_desired_incision_pref']); ?></div>
+			</div>
+			
+			<div class="row">
+				<div class="pull-left col"><?php //print drupal_render_children($form['group_breast_surgery_details']['field_sg_desired_placement']); ?></div>
+				<div class="pull-right col"><?php //print drupal_render_children($form['group_breast_surgery_details']['field_desired_placement_pref']); ?></div>
+			</div>
+			
+			<?php print render($form['group_breast_surgery_details']['#suffix']);?>
+		</div> 
+		
+	  
+	  <div class="group_medical_history" style="margin-top:20px;margin-bottom:20px;">
+			
+			<?php  print render($form['group_medical_history']['#prefix']);?>
+			
+			<div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_hospitalized']); ?>
+		  </div>
+		  <div class="row shortdate">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_when_hospitalized']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_hospitalized_reason']); ?>
+		  </div>
+		  
+		   <div class="row ">
+		    <?php print drupal_render_children($form['group_medical_history']['field_any_surgery_before']); ?>
+		  </div>
+		  <div class="row shortdate">
+		    <?php print drupal_render_children($form['group_medical_history']['field_surgery_before_date']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_surgery_before_kind']); ?>
+		  </div>
+		  
+		  
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_implants']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_implants_specify']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_healing']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_allergies']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_allergies_specify']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_medications']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_supplements']); ?>
+		  </div>
+		  <div class="row shortdate">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_inhibitor']); ?>
+		  </div>
+		  <div class="row shortdate">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_inhibitor_date']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_anticoagulant']); ?>
+		  </div>
+		  <div class="row shortdate">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_anticoagulant_date']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_smoke']); ?>
+		  </div>
+		  <div class="row shortdate">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_smoke_date']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_smoke_howmuch']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_alcohol']); ?>
+		  </div>
+		  <div class="row">
+		    <?php print drupal_render_children($form['group_medical_history']['field_sg_alcohol_howmuch']); ?>
+		  </div>
+		  
+		  <?php print render($form['group_medical_history']['#suffix']);?>
+		</div>
+		
+		<div class="image">
+			<h3><span>Image</span></h3>
+		  <?php print drupal_render_children($form['field_sg_images']);?>
+		</div>
+		
+		<div class="field_term_condition clearfix">
+			<?php print drupal_render_children($form['field_term_condition']);?>
+		</div>
+		
+		<div class="clearfix">
+			<?php print render($form['mollom']);?>
+		</div>
+		
+		<div class="clearfix">
+			<?php if($user->uid == 1) {print render($form['additional_settings']);}?>
+		</div>
+		
+		
+		<div class="clearfix">
+			<?php print render($form['actions']);?>
+		</div>
+		
+		<div style="display:none;">
+			<?php print drupal_render_children($form);?>
+		</div>

@@ -1,0 +1,7 @@
+; $Id$
+name = Stunning Forms
+description = "Custom scripts to manage stunning forms"
+core = 7.x
+version = "7.43"
+package = "STU"
+

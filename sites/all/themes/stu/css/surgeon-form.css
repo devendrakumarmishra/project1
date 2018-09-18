@@ -1,0 +1,83 @@
+#surgeon-node-form {
+  font-size: 14px;
+}
+#surgeon-node-form table {
+  width: 95%;
+}
+#surgeon-node-form table td{
+  border: 1px solid #666;
+  padding: 6px;
+}
+#surgeon-node-form label {
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+  text-align: right;
+}
+#surgeon-node-form .form-radios label {
+  float: none;
+}
+#surgeon-node-form td.wide label {
+  width: 400px;
+}
+#surgeon-node-form td {
+  width: 50%;
+}
+#surgeon-node-form td.wide {
+  width: 100%;
+}
+#surgeon-node-form .form-radios {
+  margin-left: 210px;
+}
+#surgeon-node-form td.wide .form-radios {
+  margin-left: 410px;
+}
+#surgeon-node-form .resizable-textarea {
+  width: 200px;
+}
+#surgeon-node-form .grippie {
+  margin-left: 210px;
+}
+#surgeon-node-form td.wide .resizable-textarea {
+  width: 400px;
+}
+#surgeon-node-form  td.wide .grippie {
+  margin-left: 410px;
+}
+#surgeon-node-form td.wide div.description {
+ 
+}
+.sg-title {
+  background: #f60;
+  padding: 10px;  
+  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+#surgeon-node-form .form-text {
+   width: 50%; 
+}
+#surgeon-node-form #edit-field-sg-wm-children-0-value,
+#surgeon-node-form #edit-field-sg-wm-age-youngest-0-value,
+#surgeon-node-form #edit-field-sg-height-0-value,
+#surgeon-node-form #edit-field-sg-weight-0-value,
+#surgeon-node-form #edit-field-sg-age-0-value {
+  width: 40px;
+}
+#surgeon-node-form #edit-field-sg-weight-0-value-wrapper div.description,
+#surgeon-node-form #edit-field-sg-height-0-value-wrapper div.description {
+  margin-left: 210px;
+}
+input#edit-title {
+  width: 250px;
+}
+#edit-field-sg-specify-0-value-wrapper label {
+
+}
+#edit-field-sg-age-0-value {
+  width: 200px;
+}
+td.field_sg_wm_milk .description {
+  text-align: right;
+}
