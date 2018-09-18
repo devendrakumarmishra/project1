@@ -1,8 +1,0 @@
-; $Id$
-name = Stunning feedback
-description = "Client feedback form"
-core = 7.x
-version = "7.43"
-package = "STU"
-configure = admin/makeover/settings/feedback
-
